@@ -6,7 +6,7 @@
   "homepage": "https://tanyaKalkuta.github.io/TheSkyIsTheLimit",
   "scripts": {
     "dev": "parcel src/*.html",
-    "build": "parcel build ./src/*.html",
+    "build": "parcel build src/*.html",
     "predeploy": "npm run build -- --public-url='/TheSkyIsTheLimit/'",
     "deploy": "gh-pages -d dist"
   },
