@@ -28,8 +28,9 @@
     "sass": "^1.32.8"
   },
   "dependencies": {
-    "jquery": "^3.6.0",
     "caniuse-lite": "^1.0.30001304",
+    "gh-pages": "^3.2.3",
+    "jquery": "^3.6.0",
     "lightbox2": "^2.11.3"
   }
 }
