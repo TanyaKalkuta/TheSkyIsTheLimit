@@ -5,37 +5,35 @@
   top: 0;
   z-index: 50;
   text-align: center;
-  // background-color: #626060;
-  // opacity: 0;
-  // opacity: 0.8;
-}
-.header_opacity {
-  background-color: #626060;
 
-  opacity: 0.8;
-}
-.header_container {
-  text-align: center;
-  height: 120px;
-  padding-top: 21px;
-  padding-bottom: 20px;
-  @media screen and (min-width: $tablet) {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 70px;
+  &-opacity {
+    background-color: #626060;
+    opacity: 0.8;
+  }
+  &_container {
+    text-align: center;
+    height: 120px;
     padding-top: 21px;
     padding-bottom: 20px;
+    @media screen and (min-width: $tablet) {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 70px;
+      padding-top: 21px;
+      padding-bottom: 20px;
+    }
   }
 }
+
 .scrollto {
   height: 120px;
-  // background-color: #626060;
-  // opacity: 0.8;
+
   @media screen and (min-width: $tablet) {
     height: 70px;
   }
 }
+
 .logo {
   transition-timing-function: $timing-function;
   transition-property: transform;

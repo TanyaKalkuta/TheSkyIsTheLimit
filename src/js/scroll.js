@@ -17,3 +17,7 @@ document.querySelectorAll('a[href^="#"').forEach(link => {
     });
   });
 });
+document.addEventListener('scroll', () => {
+  const scrollHeader = document.querySelector('.header');
+  scrollHeader.classList.add('header-opacity');
+});
