@@ -1,8 +1,19 @@
 .team {
-  background-color: $text-color-white;
+  text-align: center;
+  padding-top: 50px;
   padding-bottom: 50px;
   @media screen and (min-width: $tablet) {
+    padding-top: 48px;
     padding-bottom: 59px;
+  }
+  &_header {
+    margin-bottom: 37px;
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 49px;
+    }
+    @media screen and (min-width: $desktop) {
+      margin-bottom: 45px;
+    }
   }
 }
 .team_list {
@@ -10,10 +21,10 @@
   flex-wrap: wrap;
   justify-content: center;
   @media screen and (min-width: $tablet) {
-    margin-right: -19px;
+    margin-left: -19px;
   }
   @media screen and (min-width: $desktop) {
-    margin-right: -16px;
+    margin-left: -16px;
   }
 }
 
@@ -21,22 +32,32 @@
   text-align: center;
   width: 100%;
 
-  @media screen and (max-width: $mobile) {
-    width: 100%;
-    margin-bottom: 10px;
-  }
   @media screen and (min-width: $tablet) {
     width: calc(100% / 3 - 19px);
-    margin-right: 19px;
+    margin-left: 19px;
+    margin-bottom: 0px;
   }
   @media screen and (min-width: $desktop) {
     width: calc(100% / 3 - 16px);
-    margin-right: 16px;
+    margin-left: 16px;
   }
 }
+.team_item:not(:last-child) {
+  @media screen and (max-width: $tablet - 1) {
+    margin-bottom: 10px;
+  }
+}
+
 .thumb {
   position: relative;
   overflow: hidden;
+  margin-bottom: 15px;
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 14px;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 13px;
+  }
 }
 .social_thumb {
   position: absolute;
@@ -78,7 +99,7 @@
   .fab {
     &:hover,
     &:focus {
-      color: $text-color-white;
+      color: $main-color-white;
       opacity: 0.8;
     }
   }
@@ -88,18 +109,8 @@
   font-weight: 400;
   font-size: 23px;
   line-height: 1.261;
-  margin-top: 15px;
   margin-bottom: 11px;
   @media screen and (min-width: $tablet) {
-    margin-top: 14px;
     margin-bottom: 12px;
   }
-  @media screen and (min-width: $desktop) {
-    margin-top: 11px;
-  }
-}
-.team_position {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.625;
 }

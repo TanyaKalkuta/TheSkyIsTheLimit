@@ -14,13 +14,16 @@
   @media screen and (min-width: $desktop) {
     padding: 78px 30px 82px 30px;
   }
+  .section_title {
+    text-align: start;
+  }
 }
 
 .callback_form {
   input {
     display: block;
     padding: 9px 100px 7px 5px;
-    background: #ffffff;
+    background: $main-color-white;
     border: 1px solid #f5f5f5;
     box-sizing: border-box;
     border-radius: 0px;
@@ -34,7 +37,13 @@
     //   width: 620px;
     // }
   }
-  .mail {
+  .username {
     margin-bottom: 36px;
+  }
+  .mail {
+    margin-bottom: 53px;
+    @media screen and (min-width: $desktop) {
+      margin-bottom: 60px;
+    }
   }
 }

@@ -1,7 +1,22 @@
 .cases {
+  text-align: center;
+  padding-top: 50px;
   padding-bottom: 46px;
   @media screen and (min-width: $tablet) {
+    padding-top: 48px;
     padding-bottom: 48px;
+  }
+  @media screen and (min-width: $desktop) {
+    padding-top: 50px;
+  }
+  &_header {
+    margin-bottom: 37px;
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 38px;
+    }
+    @media screen and (min-width: $desktop) {
+      margin-bottom: 39px;
+    }
   }
 }
 .case_list {
@@ -9,17 +24,23 @@
   flex-wrap: wrap;
   justify-content: center;
   @media screen and (min-width: $tablet) {
-    margin-right: -8px;
-    margin-bottom: -7px;
+    margin-left: -8px;
+    margin-top: -7px;
   }
 }
 .case_item {
   text-align: center;
   width: 100%;
-  margin-bottom: 7px;
 
   @media screen and (min-width: $tablet) {
     width: calc(100% / 4 - 8px);
-    margin-right: 8px;
+    margin-left: 8px;
+    margin-top: 7px;
+    margin-bottom: 0;
+  }
+}
+.case_item:not(:last-child) {
+  @media screen and (max-width: $tablet - 1) {
+    margin-bottom: 7px;
   }
 }

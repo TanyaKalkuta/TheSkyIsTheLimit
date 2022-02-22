@@ -11,8 +11,22 @@ body {
   overflow-x: hidden;
   font-family: $fonts-main-page, sans-serif;
   color: $text-color-dark;
-  background-color: $background-color-light;
+  background-color: $main-color-white;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
 }
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
 h1,
 h2,
 h3,
@@ -45,17 +59,49 @@ a {
 .container {
   margin-right: auto;
   margin-left: auto;
-  min-width: 320px;
+  width: $mobile;
   padding-left: 20px;
   padding-right: 20px;
+  text-align: center;
 
   @media screen and (min-width: $tablet) {
-    min-width: $tablet;
+    width: $tablet;
     padding-left: 28px;
     padding-right: 28px;
   }
 
   @media screen and (min-width: $desktop) {
-    max-width: $desktop;
+    width: $desktop;
+  }
+}
+.section_title {
+  font-family: inherit;
+  font-weight: 300;
+  font-size: 38px;
+  line-height: 1.26;
+  text-align: center;
+  color: $text-color-dark;
+  margin-top: 0;
+  margin-bottom: 35px;
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 34px;
+  }
+}
+.section_subtitle {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.66;
+  /* identical to box height, or 166% */
+  margin-bottom: 15px;
+  @media screen and (min-width: $tablet) {
+    font-size: 20px;
+    line-height: 1.65;
+  }
+}
+
+.content_text {
+  @media screen and (min-width: $tablet) {
+    font-size: 18px;
+    line-height: 1.56;
   }
 }

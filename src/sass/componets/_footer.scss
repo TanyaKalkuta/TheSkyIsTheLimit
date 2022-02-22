@@ -9,11 +9,12 @@
   justify-content: space-between;
   width: 216px;
   margin: auto;
+  margin-bottom: 9px;
 }
 
 .fab {
   font-family: Font Awesome 5 Brands;
-  color: $text-color-white;
+  color: $main-color-white;
   font-style: normal;
   font-weight: 400px;
   font-size: 35px;
@@ -31,12 +32,6 @@
 }
 
 .copirite {
-  margin-top: 9px;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.625;
-  /* identical to box height, or 160% */
   text-align: center;
-  color: $text-color-white;
+  color: $main-color-white;
 }
